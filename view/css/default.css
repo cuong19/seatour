@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: lightgrey;*/
+    font-family: 'Noto Serif', serif;
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.button {
+    background-color: transparent;
+    border: DodgerBlue solid 2px;
+    color: DodgerBlue ;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out 0s;
+}
+
+.price {
+    color: crimson;
+    font-weight: bold;
+}
+
+table.tableform tr td {
+    text-align: right;
+    padding: 2px;
+}
+
+.button:hover {
+    background-color: DodgerBlue;
+    color: white;
+    transition: 0.2s ease-in-out 0s;    
+}
+
+div#header {
+    /*background-color: antiquewhite;*/
+    background-color: rgba(250,235,215, 0.95);
+}
+
+div#header table {
+    margin: auto;
+    padding: 8px;
+    width: 75%;
+}
+
+div#header table tr td.logo a {
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+div#header table tr td.logo a img.logo {
+    vertical-align: middle;
+    height: 85px;
+    width: 85px;
+}
+
+div#header table tr td.navigationbar {
+
+}
+
+div#header table tr td.navigationbar ul.navigation {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+}
+
+div#header table tr td.navigationbar ul.navigation li {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: floralwhite;
+    border-left: solid black 1px;
+    transition: 0.2s ease-in-out 0s;
+}
+
+div#header table tr td.navigationbar ul.navigation li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s ease-in-out 0s;
+}
+
+div#header table tr td.navigationbar ul.navigation li:first-child {
+    border-left: none;
+}
+
+div#header table tr td.navigationbar ul.navigation li.active {
+    background-color: lightgrey;
+}
+
+div#header table tr td.navigationbar ul.navigation li:hover {
+    transition: 0.2s ease-in-out 0s;
+    background-color: slategrey;
+    /*color: white;*/
+}
+
+div#header table tr td.navigationbar ul.navigation li:hover a {
+    transition: 0.2s ease-in-out 0s;
+    color: white;
+}
+
+#searchbar {
+    float: right;
+}
+#searchbar input {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    color: black;
+    float: left;
+    height: 18px;
+    margin: 0;
+    padding: 10px;
+    transition: background 0.2s ease-in-out 0s;
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px #fff;
+}
+#searchbar input:focus {
+    outline: none;
+    border-bottom: solid 2px slategray;
+}
+#searchbar button {
+    background: url("../image/search.png") no-repeat scroll center center slategray;
+    cursor: pointer;
+    height: 40px;
+    text-indent: -99999em;
+    width: 40px;
+    border: 2px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in-out 0s;
+}
+#searchbar button:hover {
+    border-color: slategray;
+    transition: 0.2s ease-in-out 0s;
+}
+
+div#container {
+    /*background-color: antiquewhite;*/
+    background-color: rgba(255,255,255, 0.95);
+    width: 75%;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+div#container div.content_message {
+    font-size: 24px;
+    font-weight: bold;
+    /*padding: 8px;*/
+}
+
+div#container div.tourlist {
+    width: 100%;
+    margin: auto;
+}
+
+div#container div.tourlist ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#container div.tourlist ul:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+div#container div.tourlist ul li {
+    float: left;
+    text-align: left;
+    padding: 10px;
+    margin: 8px;
+    background-color: floralwhite;
+    transition: 0.2s ease-in-out 0s;
+}
+
+div#container div.tourlist ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-in-out 0s;
+}
+
+div#container div.tourlist ul li a:hover {
+    color: white;
+    transition: 0.2s ease-in-out 0s;
+}
+
+
+div#container div.tourlist ul li:hover{
+    background-color: slategray;
+    transition: 0.2s ease-in-out 0s;
+}
+
+div#container div.tourlist ul li.tourschedule {
+    float: none;
+}
+
+div#container div.tourlist ul li.tourschedule:hover {
+    color: white;
+    transition: 0.2s ease-in-out 0s;
+}
+
+div#container div.tourlist ul li.tourschedule img {
+    width: 480px;
+    height: 360px;
+    object-fit: cover;
+}
+
+div#container div.tourlist ul li.tourschedule table tr td {
+    vertical-align: top;
+}
+
+div#container div.tourlist ul li.tourschedule table tr td p {
+    margin-left: 24px;
+    text-align: justify;
+}
+
+div#container div.tourlist ul li a img.tourimage {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+}
+
+div#container div.tourlist div.tourdetail img {
+    width:100%;
+    height:240px;
+    object-fit: cover;
+}
+
+div#container div.tourlist ul li.place a img.placeimage {
+    margin-top: 24px;
+    border: solid white 8px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+div#container div.tourlist ul li.place a table {
+    width: 100%;
+}
+
+div#container div.tourlist ul li.place a table tr td {
+    vertical-align: top;
+    width: 50%;
+}
+
+div#container div.tourlist ul li.place a table tr td p {
+    margin-left: 24px;
+    padding: 8px;
+    text-align: justify;
+    max-height: 235px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div#footer {
+    /*background-color: antiquewhite;*/
+    background-color: rgba(250,235,215, 0.95);
+    padding: 4px;
+    width: 80%;
+    margin: auto;
+}
+
+div#footer div.content {
+    text-align: center;
+}
